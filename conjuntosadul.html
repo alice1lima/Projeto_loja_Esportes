@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjuntos</title>
+    <link rel="stylesheet" href="css/camisas.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="css/carrinho.css">
+</head>
+<body>
+    
+
+    <!-------------Logo-------------->
+    <header>
+        <div class="cor">  
+            <img class="logo" src="img/Arena Sports.png" alt="">
+
+       
+        <nav>
+            <ul>
+                <li> <a href="index.html"> <h3>Inicio</h3></a></li>
+                <li> <a href="#"><h3>Categorias</h3></a> 
+            <div class="sub-menu-1">
+                <ul >
+                 <li><a  href="camisaadul.html"><h4>Camisas/Jaquetas</h4></a></li>
+                 <li><a href="Bermudas.html"><h4>Bermudas/Calças</h4></a></li>
+                 <li><a href="chuteirasadul.html"><h4>Chuteiras/Tênis</h4></a></li>
+                 <li><a href="acessoriosadul.html"><h4>Acessórios</h4></a></li>
+                 <li><a href="conjuntosadul.html"><h4>Conjuntos</h4></a></li>
+                 </ul>
+             </div>
+              
+                 <li> <a href="#contato"><h3>Contatos</h3></a></li>
+            </ul>
+        
+                <button class="compras1"  onclick="mostrarCarrinho()"><img class="compras" src="img/carrinho_de_compras.png" alt=""></button> 
+        </nav>
+
+        
+       
+    </div>
+    </header>
+
+    <!--Final do cabeçalho-->
+    <!--Inicio da categoria 1 -->
+
+    <h1 id="categorias"  class="kids">Conjuntos </h1> <br> <br>
+    
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_1.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 100,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 100)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_2.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 85,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 85)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_3.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 80,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 80)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_4.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 82,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 82)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+</figure> <br>
+<!--Fim da categoria 1 -->
+
+
+<h1 id="categorias"  class="kids">Conjuntos </h1> <br> <br>
+    
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_5.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 100,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 100)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_6.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 85,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 85)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_7.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 80,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 80)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/conjunto/conjunto_8.jpg" alt="Conjunto" class="imagem">
+            <div class="container"> </div>
+            <h3>Conjunto </h3> <br>
+            <h3>R$ 82,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Conjunto -  ', 82)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+</figure> <br>
+<!--Fim da categoria 2 -->
+
+<!--Carrinho -->
+
+<section id="carrinho">
+    <h1>Resumo da compra</h1>
+     <ul id="itenscarrinho">
+         <!--Aqui será adicionador itens no carinho-->
+      
+     </ul>
+    
+     <p> <b> Total: R$ </b> <samp id="totalcarrinho">0</samp></p>
+     <button class="comprar1" onclick="realizarcomprar()">Comprar</button>
+     <button id="totalcarrinho"  onclick="mostrarCarrinho()" src="img/carrinho_de_compras.png" ></button>
+ 
+ 
+ </section>
+ 
+ 
+ 
+ 
+ <script src="js/script.js"></script>
+
+</body>
+</html>

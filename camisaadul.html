@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roupas</title>
+    <link rel="stylesheet" href="css/camisas.css">
+    <link rel="stylesheet" href="css/carrosel.css">
+    <link rel="stylesheet" href="js/camisa.js">
+    <link rel="stylesheet" href="css/carrinho.css">
+
+
+</head>
+<body>
+
+
+    <!-------------Logo-------------->
+    <header>
+        <div class="cor">  
+            <img class="logo" src="img/Arena Sports.png" alt="">
+
+       
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> <h3>Inicio</h3></a></li>
+                    <li> <a href="#"><h3>Categorias</h3></a> 
+                <div class="sub-menu-1">
+                    <ul >
+                     <li><a  href="camisaadul.html"><h4>Camisas/Jaquetas</h4></a></li>
+                     <li><a href="Bermudas.html"><h4>Bermudas/Calças</h4></a></li>
+                     <li><a href="chuteirasadul.html"><h4>Chuteiras/Tênis</h4></a></li>
+                     <li><a href="acessoriosadul.html"><h4>Acessórios</h4></a></li>
+                     <li><a href="conjuntosadul.html"><h4>Conjuntos</h4></a></li>
+                     </ul>
+                 </div>
+                 
+                     <li> <a href="#contato"><h3>Contatos</h3></a></li>
+                </ul>
+            
+                    <button class="compras1"  onclick="mostrarCarrinho()"><img class="compras" src="img/carrinho_de_compras.png" alt=""></button> 
+
+                </nav>
+
+        
+       
+    </div>
+    </header>
+<!--Inicio da categoria 2-->
+
+ <!-----------------Banner------------->
+ <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel-slide">
+        <!-- Conteúdo do banner 1 -->
+        <a href="C:\Users\laian\OneDrive\Documentos\teste_site\index.html">
+        <img class="banner" src="img/roupas/banner1.png" alt="Banner 1"> </a>
+      </div>
+
+      <div class="carousel-slide">
+        <!-- Conteúdo do banner 2 -->
+        <img class="banner" src="img/roupas/banner2.png" alt="Banner 2">
+      </div>
+      <!-- Setas de navegação -->
+
+      <button class="seta-anterior">&larr;</button>
+      <button class="seta-proxima">&rarr;</button>
+
+  
+    </div>
+  </div> <br>
+
+
+<h1 id="categorias"  class="kids">Camisas - Time </h1> <br> <br>
+    
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_america1.jpg" alt="Camisa - América" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_america2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_america1.jpg'">
+            <div class="container"> </div>
+            <h3>Camisa - América </h3> <br>
+            <h3>R$ 209,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - América -  ', 209.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_atlemineiro1.jpg" alt="Camisa - Atlético Mineiro" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_atlemineiro2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_atlemineiro1.jpg'">
+            <div class="container"> </div>
+            <h3>Camisa - Atletico Mineiro </h3> <br>
+            <h3>R$ 279,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa do Atlético Mineiro -  ', 279.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_bragantino1.jpg" alt="Camisa -  RedBull Bragantino" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_bragantino2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_bragantino1.jpg'">
+            <h3>Camisa -  RedBull Bragantino </h3> <br>
+            <h3>R$ 242,49</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  RedBull Bragantino -  ', 242.49)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_corinthias1.jpg" alt="Camisa - Corinthias" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_corinthias2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_corinthias1.jpg'">
+            <h3>Camisa -  Corinthias </h3> <br>
+            <h3>R$ 299,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  Corinthias -  ', 299.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+</figure> <br>
+<!--Fim da categoria1-->
+
+<!--Inicio da categoria 2-->
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_cruzeiro1.jpg" alt="Camisa - Cruzeiro" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_cruzeiro2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_cruzeiro1.jpg'">
+            <h3>Camisa - Cruzeiro </h3> <br>
+            <h3>R$ 329,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Cruzeiro -  ', 329.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_flamengo1.jpg" alt="Camisa - Flamengo" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_flamengo2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_flamengo1.jpg'">
+            <h3>Camisa - Flamengo </h3> <br>
+            <h3>R$ 269,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Flamengo -  ', 269.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_fluminense1.jpg" alt="Camisa -  Fluminense" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_fluminense2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_fluminense1.jpg'">
+            <h3>Camisa -  Fluminense </h3><br>
+            <h3>R$ 149,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  Fluminense -  ', 149.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_fortaleza1.jpg" alt="Camisa - Fortaleza" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_fortaleza2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_fortaleza1.jpg'">
+            <h3>Camisa -  Fortaleza </h3> <br>
+            <h3>R$ 290,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  Fortaleza -  ', 290.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+</figure> <br>
+
+<!--Fim da categoria 2-->
+
+<!--Inicio da categoria 3-->
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_gremio1.jpg" alt="Camisa - Gremio" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_gremio2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_gremio1.jpg'">
+            <h3>Camisa - Gremio </h3> <br>
+            <h3>R$ 349,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Gremio -  ', 349.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_internacional1.jpg" alt="Camisa - Internacional" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_internacional2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_internacional1.jpg'">
+            <h3>Camisa - Internacional </h3> <br>
+            <h3>R$ 287,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Internacional -  ', 287.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img id="promocao" src="img/roupas/camisa_palmeiras1.jpg" alt="Camisa -  Palmeiras" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_palmeiras2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_palmeiras1.jpg'">
+            <h3>Camisa -  Palmeiras </h3> <br>
+            <h3>DE <s class="red">299,99</s></h3>
+            <h3>POR R$ 149,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  Palmeiras -  ', 149.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_santos1.jpg" alt="Camisa - Santos" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_santos2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_santos1.jpg'">
+            <h3>Camisa -  Santos </h3> <br>
+            <h3>R$ 179,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  Santos -  ', 179.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+</figure> <br>
+<!--Fim da categoria 3-->
+
+
+<!--Inicio da categoria 4-->
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_saopaulo1.jpg" alt="Camisa - São Paulo" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_saopaulo2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_saopaulo1.jpg'">
+            <h3>Camisa - São Paulo </h3> <br>
+            <h3>R$ 349,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - São Paulo -  ', 349.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_vasco1.jpg" alt="Camisa - Vasco" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_vasco2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_vasco1.jpg'">
+            <h3>Camisa - Vasco </h3> <br>
+            <h3>DE <s class="red">405,95</s></h3>
+            <h3>POR R$ 287,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Vasco -  ', 287.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_botafogo1.jpg" alt="Camisa -  Botafogo" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_botafogo2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_botafogo1.jpg'">
+            <h3>Camisa -  Botafogo </h3> <br>
+            <h3> DE <s class="red">315,50</s></h3>
+            <h3>POR R$ 149,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  Botafogo -  ', 149.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/camisa_athlparanaense1.jpg" alt="Camisa - Athletico Paranaense" class="imagem"
+            onmouseover="this.src='img/roupas/camisa_athlparanaense2.jpg'"
+            onmouseout="this.src='img/roupas/camisa_athlparanaense1.jpg'">
+            <h3>Camisa -  Athletico Paranaense </h3> <br>
+            <h3>R$ 179,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa -  Athletico Paranaense -  ', 179.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+</figure> <br>
+
+<!--Fim da categoria 4-->
+
+<h1 id="categorias"  class="kids">Jaquetas</h1> <br> <br>
+
+<!--Inicio da categoria 5-->
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/arenasports1.png" alt="Jaqueta - Arena Sports" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/arenasports2.png'"
+            onmouseout="this.src='img/roupas/jaquetas/arenasports1.png'">
+            <h3>Jaqueta - Arena Sports </h3> <br>
+            <h3>DE <s class="red"> 320,99</s></h3>
+            <h3>POR R$ 200,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - Arena Sports -  ', 200.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/jaqueta_branca1.webp" alt="Jaqueta - Branca" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/jaqueta_branca2.webp'"
+            onmouseout="this.src='img/roupas/jaquetas/jaqueta_branca1.webp'">
+            <h3>Jaqueta - Branca </h3> <br>
+            <h3>DE <s class="red"> 415,00</s></h3>
+            <h3>POR R$ 315,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - Branca -  ', 315.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/jaqueta_lakers1.webp" alt="Jaqueta - Lakers" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/jaqueta_lakers2.jpg'"
+            onmouseout="this.src='img/roupas/jaquetas/jaqueta_lakers1.webp'">
+            <h3>Jaqueta - Lakers </h3> <br>
+            <h3>DE <s class="red">410,60</s></h3>
+            <h3>R$ 285,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - Lakers -  ', 285.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/jaqueta_liverpoll1.jpg" alt="Jaqueta - LiverPoll" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/jaqueta_liverpoll2.jpg'"
+            onmouseout="this.src='img/roupas/jaquetas/jaqueta_liverpoll1.jpg'">
+            <h3>Jaqueta - LiverPoll </h3> <br>
+            <h3>R$ 385,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - LiverPoll -  ', 385.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+
+</figure> <br>
+<!--Fim da categoria 5-->
+
+<!--Inicio da categoria 6-->
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/jaqueta_manchestercity1.jpg" alt="Jaqueta - Manchester Citty" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/jaqueta_manchestercity2.jpg'"
+            onmouseout="this.src='img/roupas/jaquetas/jaqueta_manchestercity1.jpg'">
+            <h3>Jaqueta - Manchester Citty </h3> <br>
+            <h3>R$ 410,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - Manchester Citty -  ', 410.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/jaqueta_newyork1.jpg" alt="Jaqueta - New York" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/jaqueta_newyork2.jpg'"
+            onmouseout="this.src='img/roupas/jaquetas/jaqueta_newyork1.jpg'">
+            <h3>Jaqueta - New York </h3> <br>
+            <h3>R$ 350,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - Branca -  ', 350.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/jaqueta_saopaulo1.jpg" alt="Jaqueta - São Paulo" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/jaqueta_saopaulo2.jpg'"
+            onmouseout="this.src='img/roupas/jaquetas/jaqueta_saopaulo1.jpg'">
+            <h3>Jaqueta - São Paulo </h3> <br>
+            <h3>R$ 215,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - São Paulo -  ', 215.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/roupas/jaquetas/jaqueta_umbro1.jpg" alt="Jaqueta - Umbro" class="imagem"
+            onmouseover="this.src='img/roupas/jaquetas/jaqueta_umbro2.jpg'"
+            onmouseout="this.src='img/roupas/jaquetas/jaqueta_umbro1.jpg'">
+            <h3>Jaqueta - Umbro </h3> <br>
+            <h3>R$ 110,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Jaqueta - Umbro -  ', 110.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+
+</figure> <br>
+
+
+
+<!--Fim da categoria 6-->
+
+
+
+<section id="carrinho">
+   <h1>Resumo da compra</h1>
+    <ul id="itenscarrinho">
+        <!--Aqui será adicionador itens no carinho-->
+     
+    </ul>
+   
+    <p> <b> Total: R$ </b> <samp id="totalcarrinho">0</samp></p>
+    <button class="comprar1" onclick="realizarcomprar()">Comprar</button>
+    <button id="totalcarrinho"  onclick="mostrarCarrinho()" src="img/carrinho_de_compras.png" ></button>
+
+
+</section>
+
+
+
+
+<script src="js/script.js"></script>
+
+        <!--------------------Rodapé---------------->
+        <footer class="rodape" id="contato">
+            <div class="rodape-div">
+        
+                <div class="rodape-div-1">
+                    <div class="rodape-div-1-coluna">
+                        <!-- elemento -->
+                        <span><b> <img src="img/logo.png" alt=""></b></span>
+                        <p>Arena Sports -
+                            Endereço: Rua da Aventura, 123, flores </p>
+                    </div>
+                </div>
+        
+                <div class="rodape-div-2">
+                    <div class="rodape-div-2-coluna">
+                        <!-- elemento -->
+                        <span><b>Contatos</b></span>
+                        <p>arenasports@gmail.com</p>
+                        <p>+55 63 99200-0000</p>
+                    </div>
+                </div>
+        
+                <div class="rodape-div-3">
+                    <div class="rodape-div-3-coluna">
+                        <!-- elemento -->
+                        <span><b>Links</b></span>
+                        <p><a href="#servicos">Serviços</a></p>
+                        <p><a href="#empresa">Empresa</a></p>
+                        <p><a href="#sobre">Sobre</a></p>
+                    </div>
+                </div>
+        
+                <div class="rodape-div-4">
+                    <div class="rodape-div-4-coluna">
+                        <!-- elemento -->
+                        <span><b>Outros</b></span>
+                        <p>Políticas de Privacidade</p>
+                    </div>
+                </div>
+        
+            </div>
+            
+        </footer>
+
+
+</body>
+</html>

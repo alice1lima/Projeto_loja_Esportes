@@ -1,0 +1,64 @@
+#itenscarrinho{
+    font-size:20px ;
+}
+
+section#carrinho {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: 2; /* Define a ordem de empilhamento, maior valor sobreposto por menor valor */
+    background-color: rgba(0, 0, 0, 0.699); /* Cor de fundo, ajuste conforme necessário */
+    color: rgb(242, 255, 0);
+    border-radius: 5px;
+    width: 500px;
+    right: 100px;
+  }
+
+
+  .compras{
+    height: 30px;
+    width:30px ;
+    background-color: #000;
+    border: 2px solid black;
+
+  }
+
+  
+
+#comprabtn{
+    cursor: pointer;
+    width: 90px;
+    padding: 5px;
+    margin: 5px 0;
+    align-self: center;
+}
+
+#itensCarrinho{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#itensCarrinho button,
+#comprabtn{
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#itensCarrinho li{
+    line-height: 27px;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+
+.comprar1{
+    border-radius: 15px;
+  background-color: black;
+  color: white;
+}

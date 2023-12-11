@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roupas</title>
+    <link rel="stylesheet" href="css/camisas.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/anuncio.css">
+    <link rel="stylesheet" href="js/camisa.js">
+    <link rel="stylesheet" href="css/carrosel.css">
+   
+
+
+</head>
+<body>
+    <!-------------Logo-------------->
+    <header>
+        <div class="cor">  
+            <img class="logo" src="img/logo2.png" alt="">
+                
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> <h3>Inicio</h3></a></li>
+                    <li> <a href="#"><h3>Categorias</h3></a> 
+                <div class="sub-menu-1">
+                    <ul >
+                     <li><a  href="camisaadul.html"><h4>Camisas/Jaquetas</h4></a></li>
+                     <li><a href="Bermudas.html"><h4>Bermudas/Calças</h4></a></li>
+                     <li><a href="chuteirasadul.html"><h4>Chuteiras/Tênis</h4></a></li>
+                     <li><a href="acessoriosadul.html"><h4>Acessórios</h4></a></li>
+                     <li><a href="conjuntosadul.html"><h4>Conjuntos</h4></a></li>
+                     </ul>
+                 </div>
+                     <li> <a href="#contato"><h3>Contatos</h3></a></li>
+                </ul>
+            
+                    <button class="compras1"  onclick="mostrarCarrinho()"><img class="compras" src="img/carrinho_de_compras.png" alt=""></button> 
+            </nav>
+    
+    </div>
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel-slide">
+            <!-- Conteúdo do banner 1 -->
+            <img class="banner" src="#" alt="Banner 1"> 
+          </div>
+    
+          <div class="carousel-slide">
+            <!-- Conteúdo do banner 2 -->
+            <img class="banner" src="#" alt="Banner 2">
+          </div>
+          <!-- Setas de navegação -->
+    
+          <button class="seta-anterior"></button>
+          <button class="seta-proxima"></button>
+    
+      
+        </div>
+      </div> <br>
+
+<!--Inicio da categoria 2-->
+<h1 id="categorias"  class="kids">Bermudas  </h1> <br> <br>
+
+
+<figure class="imagem-container">
+    
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_azul1adidas.jpg" alt="Calção - Azul - Adidas" class="imagem"
+            onmouseover="this.src='img/calcao/calcao_azul2adidas.jpg'"
+            onmouseout="this.src='img/calcao/calcao_azul1adidas.jpg'">
+            <h3>Bermuda - Azul - Adidas </h3> <br>
+            <h3>R$ 209,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Azul - Adidas -  ', 209.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_azul1paris.jpg" alt="Calção - Azul - Paris " class="imagem"
+            onmouseover="this.src='img/calcao/calcao_azul2paris.jpg'"
+            onmouseout="this.src='img/calcao/calcao_azul1paris.jpg'">
+            <h3>Bermuda - Azul - Paris  </h3> <br>
+            <h3>R$ 279,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Azul - Paris  -  ', 279.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_branco1atlemineiro.jpg" alt="Calção - Branco - Atletico Mineiro" class="imagem"
+            onmouseover="this.src='img/calcao/calcao_branco2atlemineiro.jpg'"
+            onmouseout="this.src='img/calcao/calcao_branco1atlemineiro.jpg'">
+            <h3>Bermuda - Branco - Atletico Mineiro </h3> <br>
+            <h3>R$ 242,49</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calção - Branco - Atletico Mineiro -  ', 242.49)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_verde1palmeiras.jpg" alt="Calção - Verde - Palmeiras" class="imagem"
+            onmouseover="this.src='img/calcao/calcao_verde2palmeiras.jpg'"
+            onmouseout="this.src='img/calcao/calcao_verde1palmeiras.jpg'">
+            <h3>Bermuda - Verde - Palmeiras </h3> <br>
+            <h3>R$ 299,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calção - Verde - Palmeiras  ', 299.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+</figure> <br>
+<!--Fim da categoria 1-->
+
+
+<!--Inicio da categoria 2-->
+    
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_branco1fluminense.jpg" alt="Calção - Branco - Fluminense" class="imagem"
+            onmouseover="this.src='img/calcao/calcao_branco2fluminense.jpg'"
+            onmouseout="this.src='img/calcao/calcao_branco1fluminense.jpg'">
+            <h3>Bermuda - Branco - Fluminense </h3> <br>
+            <h3>R$ 209,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Camisa - Branco - Fluminense -  ', 209.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_branco1umbro.jpg" alt="Calção - Branco - Umbro " class="imagem"
+            onmouseover="this.src='img/calcao/calcao_branco2umbro.jpg'"
+            onmouseout="this.src='img/calcao/calcao_branco1umbro.jpg'">
+            <h3>Bermuda - Branco - Umbro  </h3> <br>
+            <h3>R$ 279,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Bermuda - Branco - Umbro  -  ', 279.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_vermelho1flamengo.jpg" alt="Calção - Vermelho - Flamengo" class="imagem"
+            onmouseover="this.src='img/calcao/calcao_vermelho2flamengo.jpg'"
+            onmouseout="this.src='img/calcao/calcao_vermelho1flamengo.jpg'">
+            <h3>Bermuda - Vermelho - Flamengo </h3> <br>
+            <h3>R$ 242,49</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calção - Vermelho - Flamengo -  ', 242.49)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calcao_vermelho1adidas.jpg" alt="Calção - Vermelho - Adidas" class="imagem"
+            onmouseover="this.src='img/calcao/calcao_vermelho2adidas.jpg'"
+            onmouseout="this.src='img/calcao/calcao_vermelho1adidas.jpg'">
+            <h3>Bermuda - Vermelho - Adidas </h3> <br>
+            <h3>R$ 299,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calção - Vermelho - Adidas  ', 299.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+</figure> <br>
+<!--Fim da categoria 2-->
+<h1 id="categorias"  class="kids">Calças  </h1> <br> <br>
+<!--Inicio da categoria 3-->
+<figure class="imagem-container">
+<div class="imagem-wrapper">
+    <img src="img/calcao/calça/calça_adidas1.jpg" alt="Calça -  Adidas" class="imagem"
+        onmouseover="this.src='img/calcao/calça/calça_adidas2.jpg'"
+        onmouseout="this.src='img/calcao/calça/calça_adidas1.jpg'">
+        <h3>Calça - Adidas </h3> <br>
+        <h3>R$ 100,00</h3>
+        <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Adidas  ', 100)">
+        <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+</div>
+
+
+<div class="imagem-wrapper">
+    <img src="img/calcao/calça/calça_adidas_azul1.jpg " alt= "Calça -  Adidas - Azul" class="imagem"
+        onmouseover="this.src='img/calcao/calça/calça_adidas_azul2.jpg '"
+        onmouseout="this.src='img/calcao/calça/calça_adidas_azul1.jpg '">
+        <h3>Calça - Adidas - Azul </h3> <br>
+        <h3>R$ 110,00</h3>
+        <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Adidas - Azul  ', 110)">
+        <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+</div>
+
+<div class="imagem-wrapper">
+    <img src="img/calcao/calça/calça_adidas_cinza1.jpg" alt= "Calça -  Adidas - Cinza" class="imagem"
+        onmouseover="this.src='img/calcao/calça/calça_adidas_cinza2.jpg '"
+        onmouseout="this.src='img/calcao/calça/calça_adidas_cinza1.jpg'">
+        <h3>Calça - Adidas - Cinza </h3> <br>
+        <h3>R$ 99,90</h3>
+        <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Adidas - Cinza  ', 99.90)">
+        <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+</div>
+
+<div class="imagem-wrapper">
+    <img src="img/calcao/calça/calça_adidas_vinho1.jpg" alt= "Calça -  Adidas - Vinho" class="imagem"
+        onmouseover="this.src='img/calcao/calça/calça_adidas_vinho2.jpg '"
+        onmouseout="this.src='img/calcao/calça/calça_adidas_vinho1.jpg'">
+        <h3>Calça - Adidas - Vinho </h3> <br>
+        <h3>R$ 199,90</h3>
+        <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Adidas - Vinho  ', 199.90)">
+        <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+</div>
+
+</figure> <br>
+<!--Fim da categoria 3-->
+
+<!--Inicio da categoria 3-->
+<figure class="imagem-container">
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calça/calça_mizuno1.jpg" alt="Calça - Mizuno" class="imagem"
+            onmouseover="this.src='img/calcao/calça/calça_mizuno2.jpg'"
+            onmouseout="this.src='img/calcao/calça/calça_mizuno1.jpg'">
+            <h3>Calça - Mizuno </h3> <br>
+            <h3>R$ 80,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Mizuno  ', 80)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+    
+    
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calça/calça_nike1.jpg " alt= "Calça -  Nike " class="imagem"
+            onmouseover="this.src='img/calcao/calça/calça_nike2.jpg '"
+            onmouseout="this.src='img/calcao/calça/calça_nike1.jpg '">
+            <h3>Calça - Nike  </h3> <br>
+            <h3>R$ 130,00</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Nike   ', 130)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+    
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calça/calça_nike1_preta1.jpg" alt= "Calça -  Nike - Preta" class="imagem"
+            onmouseover="this.src='img/calcao/calça/calça_nike1_preta2.jpg '"
+            onmouseout="this.src='img/calcao/calça/calça_nike1_preta1.jpg'">
+            <h3>Calça - Nike - Preta </h3> <br>
+            <h3>R$ 199,90</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Nike - Preta  ', 199.90)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+    
+    <div class="imagem-wrapper">
+        <img src="img/calcao/calça/calça_nike_preta1.jpg" alt= "Calça -  Nike - Preta" class="imagem"
+            onmouseover="this.src='img/calcao/calça/calça_nike_preta2.jpg '"
+            onmouseout="this.src='img/calcao/calça/calça_nike_preta1.jpg'">
+            <h3>Calça - Nike - Preta </h3> <br>
+            <h3>R$ 299,99</h3>
+            <button class="botaocarrinho" onclick="adicionarcarrinho('Calça - Nike - Preta  ', 299.99)">
+            <img class="carrinho_compras" src="img/carrinho_compra.png" alt=""></i></button>
+    </div>
+    
+    </figure>
+    <!--Fim da categoria 3-->
+    
+
+
+    <section id="carrinho">
+        <h1>Resumo da compra</h1>
+         <ul id="itenscarrinho">
+             <!--Aqui será adicionador itens no carinho-->
+          
+         </ul>
+        
+         <p> <b> Total: R$ </b> <samp id="totalcarrinho">0</samp></p>
+         <button class="comprar1" onclick="realizarcomprar()">Comprar</button>
+         <button id="totalcarrinho"  onclick="mostrarCarrinho()" src="img/carrinho_de_compras.png" ></button>
+     
+     
+     </section>
+     <script src="js/script.js"></script>
+
+ <!--------------------Rodapé---------------->
+ <footer class="rodape" id="contato">
+    <div class="rodape-div">
+
+        <div class="rodape-div-1">
+            <div class="rodape-div-1-coluna">
+                <!-- elemento -->
+                <span><b> <img src="img/logo.png" alt=""></b></span>
+                <p>Arena Sports -
+                    Endereço: Rua da Aventura, 123, flores </p>
+            </div>
+        </div>
+
+        <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+                <!-- elemento -->
+                <span><b>Contatos</b></span>
+                <p>arenasports@gmail.com</p>
+                <p>+55 63 99200-0000</p>
+            </div>
+        </div>
+
+        <div class="rodape-div-3">
+            <div class="rodape-div-3-coluna">
+                <!-- elemento -->
+                <span><b>Links</b></span>
+                <p><a href="#servicos">Serviços</a></p>
+                <p><a href="#empresa">Empresa</a></p>
+                <p><a href="#sobre">Sobre</a></p>
+            </div>
+        </div>
+
+        <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+                <!-- elemento -->
+                <span><b>Outros</b></span>
+                <p>Políticas de Privacidade</p>
+            </div>
+        </div>
+
+    </div>
+    
+</footer>
+
+</body>
+</html>

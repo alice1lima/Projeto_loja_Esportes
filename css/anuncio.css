@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+@media screen and(max-width:800px) {
+    .anuncio{
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+}
+
+@media screen and(max-width:50px) {
+    .anuncio{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.anuncio1{
+    width: 200px;
+    height:500px;
+    padding:5px;
+}
